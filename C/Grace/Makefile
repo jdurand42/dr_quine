@@ -32,7 +32,15 @@ s	:
 w	:
 		$(CC) -o $(NAME) $(CFLAGS) $(SRCS)
 
-run	:
+clean	:
+		$(RM) $(OBJS)
+
+fclean	:	clean
+		$(RM) $(NAME)
+
+re	:	fclean all
+
+run	: clean
 		./$(NAME)
 
 test	: run
@@ -43,12 +51,5 @@ else
 	@echo $(RES);
 endif
 
-clean	:
-		$(RM) $(OBJS)
-
-fclean	:	clean
-		$(RM) $(NAME)
-
-re	:	fclean all
 
 .PHONY	:	clean fclean all c s w run test
