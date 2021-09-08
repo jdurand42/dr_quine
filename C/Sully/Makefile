@@ -2,7 +2,9 @@ NAME		=	Sully
 
 SRCS	= Sully.c
 
-TEST_FILE = test.c
+RESULT_FILES = Sully_4.c Sully_3.c Sully_2.c Sully_1.c Sully_0.c
+
+RESULT_EXECS = Sully_4 Sully_3 Sully_2 Sully_1 Sully_0
 
 CC		=	gcc
 
@@ -36,9 +38,11 @@ w	:
 
 clean	:
 		$(RM) $(OBJS)
+		$(RM) $(RESULT_FILES)
 
 fclean	:	clean
 		$(RM) $(NAME)
+		$(RM) $(RESULT_EXECS)
 
 re	:	fclean all
 
