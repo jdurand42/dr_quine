@@ -29,7 +29,7 @@ all	:	$(NAME)
 		chmod +x $(NAME)
 
 $(NAME): $(OBJS)
-		$(CC2) -o $(NAME) $(SANI) $(OBJS)
+		$(CC2) -o $(NAME) $(OBJS)
 
 clean	:
 		$(RM) $(OBJS)
