@@ -35,7 +35,7 @@ w	:
 		$(CC) -o $(NAME) $(CFLAGS) $(SRCS)
 
 clean	:
-		$(RM) $(OBJS)
+		$(RM) $(OBJS) $(TEST_FILE)
 
 fclean	:	clean
 		$(RM) $(NAME)

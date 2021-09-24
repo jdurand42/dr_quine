@@ -32,7 +32,7 @@ $(NAME): $(OBJS)
 		$(CC2) -o $(NAME) $(OBJS)
 
 clean	:
-		$(RM) $(OBJS)
+		$(RM) $(OBJS) $(TEST_FILE)
 
 fclean	:	clean
 		$(RM) $(NAME)

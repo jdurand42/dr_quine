@@ -36,7 +36,7 @@ clean	:
 		$(RM) $(OBJS)
 
 fclean	:	clean
-		$(RM) $(NAME)
+		$(RM) $(NAME) $(OUTPUT_FILE)
 
 re	:	fclean all
 

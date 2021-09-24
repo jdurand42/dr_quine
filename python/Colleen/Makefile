@@ -23,6 +23,7 @@ GOOD = ""
 all	: run
 
 clean	:
+		$(RM) $(TEST_FILE)
 
 fclean	:	clean
 
